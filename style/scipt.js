@@ -1,9 +1,3 @@
-//WHEN I view the time blocks for that day
-//THEN each time block is color-coded to indicate whether it is in the past, present, or future
-
-
-
-
 //displaying current day on header
 $("#currentDay").html(dayjs().format("MMMM-DD-YYYY")) 
 
@@ -49,8 +43,6 @@ var hour16 = document.getElementById("16").id;
 var hour17 = document.getElementById("17").id;
 
 //making time blocks change based on past,present,future
-//using if and else statement
-//put in a function
 
 var checkTheHour = function(){
     
@@ -145,6 +137,7 @@ var checkTheHour = function(){
     }
 }
 checkTheHour()
+//running checktheHour function every minute so it updates dynamically
 setInterval(function(){
     checkTheHour();
 }, 60 * 1000);
