@@ -36,7 +36,6 @@ var saveUserInput = function(){
 
 //variable to hold current time
 var currentHour = dayjs().hour();
-console.log(currentHour)
 
 //variables to get id value 
 var hour9 = document.getElementById("09").id;
